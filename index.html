@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Cabanatuan - Lost Monuments and Vanishing Cultures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">📖 Cabanatuan History</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#book" class="nav-link">About Book</a></li>
+                <li><a href="#history" class="nav-link">History</a></li>
+                <li><a href="#authors" class="nav-link">Authors</a></li>
+                <li><a href="#interactive" class="nav-link">Interactive</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Lost Monuments and Vanishing Cultures</h1>
+            <p class="fade-in">Discover the Rich History of Cabanatuan</p>
+            <button class="cta-button" onclick="scrollToSection('book')">Explore Now</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Book Cover Section -->
+    <section id="book" class="book-section">
+        <div class="book-container">
+            <div class="book-wrapper">
+                <div class="book-cover">
+                    <div class="book-spine"></div>
+                    <div class="book-front">
+                        <div class="book-header">
+                            <h2>Lost</h2>
+                            <h1>Monuments<br>and<br>Vanishing<br>Cultures</h1>
+                        </div>
+                        <div class="book-map">
+                            <div class="map-icon">📍</div>
+                            <p>Cabanatuan City</p>
+                        </div>
+                        <div class="book-footer">
+                            <p class="author-names">NIEVES C. VILLAMIN<br>JOEL P. MALLARI<br>CESAR G. LEGASPI<br>ELMER S. CATAHON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-info">
+                    <h3>About This Book</h3>
+                    <p>This comprehensive guide explores the historical monuments and cultural heritage of Cabanatuan City. Through detailed research and compelling narratives, the authors document the rich history and traditions that shaped this vibrant community.</p>
+                    <ul class="book-features">
+                        <li>📖 Detailed Historical Documentation</li>
+                        <li>🏛️ Monument Preservation Guide</li>
+                        <li>🎭 Cultural Heritage Studies</li>
+                        <li>🗺️ Interactive Maps and Locations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline Section -->
+    <section id="history" class="history-section">
+        <h2>Timeline of Cabanatuan</h2>
+        <div class="timeline">
+            <div class="timeline-item" onclick="expandTimeline(this)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>Pre-Colonial Era</h4>
+                    <p class="timeline-hidden">The area was home to indigenous communities with rich cultural traditions and agricultural practices.</p>
+                </div>
+            </div>
+            <div class="timeline-item" onclick="expandTimeline(this)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>Spanish Colonial Period (1571)</h4>
+                    <p class="timeline-hidden">Founded as a settlement, Cabanatuan developed into an important religious and administrative center.</p>
+                </div>
+            </div>
+            <div class="timeline-item" onclick="expandTimeline(this)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>American Colonial Period</h4>
+                    <p class="timeline-hidden">Infrastructure development and modernization shaped the city's contemporary structure.</p>
+                </div>
+            </div>
+            <div class="timeline-item" onclick="expandTimeline(this)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>Post-Independence Era</h4>
+                    <p class="timeline-hidden">Cabanatuan continues to grow as a major economic and cultural hub in Nueva Ecija.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authors Section -->
+    <section id="authors" class="authors-section">
+        <h2>Meet the Authors</h2>
+        <div class="authors-grid">
+            <div class="author-card" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="author-avatar">NH</div>
+                <h3>Nieves C. Villamin</h3>
+                <p class="author-title">Lead Author & Historian</p>
+                <p class="author-bio">Renowned historian specializing in Philippine cultural heritage and monument preservation.</p>
+            </div>
+            <div class="author-card" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="author-avatar">JM</div>
+                <h3>Joel P. Mallari</h3>
+                <p class="author-title">Co-Author & Researcher</p>
+                <p class="author-bio">Expert in local history and cultural documentation of Nueva Ecija region.</p>
+            </div>
+            <div class="author-card" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="author-avatar">CL</div>
+                <h3>Cesar G. Legaspi</h3>
+                <p class="author-title">Co-Author & Cultural Advocate</p>
+                <p class="author-bio">Dedicated to preserving and promoting Filipino cultural traditions and heritage.</p>
+            </div>
+            <div class="author-card" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="author-avatar">EC</div>
+                <h3>Elmer S. Catahon</h3>
+                <p class="author-title">Co-Author & Editor</p>
+                <p class="author-bio">Contributor to historical documentation and cultural preservation projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive" class="interactive-section">
+        <h2>Interactive Heritage Tour</h2>
+        <div class="interactive-container">
+            <div class="monument-carousel">
+                <div class="monument-card active" id="monument-1">
+                    <div class="monument-image">🏛️</div>
+                    <h3>Historic Churches</h3>
+                    <p>Discover the architectural heritage of Cabanatuan's religious structures, reflecting centuries of spiritual devotion and cultural evolution.</p>
+                </div>
+                <div class="monument-card" id="monument-2">
+                    <div class="monument-image">🗿</div>
+                    <h3>Cultural Monuments</h3>
+                    <p>Explore the monuments dedicated to significant historical events and notable figures in Cabanatuan's past.</p>
+                </div>
+                <div class="monument-card" id="monument-3">
+                    <div class="monument-image">🏘️</div>
+                    <h3>Heritage Districts</h3>
+                    <p>Walk through the preserved historical districts that showcase traditional Filipino architecture and community life.</p>
+                </div>
+                <div class="monument-card" id="monument-4">
+                    <div class="monument-image">🎭</div>
+                    <h3>Cultural Traditions</h3>
+                    <p>Learn about the vibrant festivals, customs, and traditions that define Cabanatuan's cultural identity.</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="control-btn" onclick="prevMonument()">❮</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="showMonument(1)"></span>
+                    <span class="indicator" onclick="showMonument(2)"></span>
+                    <span class="indicator" onclick="showMonument(3)"></span>
+                    <span class="indicator" onclick="showMonument(4)"></span>
+                </div>
+                <button class="control-btn" onclick="nextMonument()">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <h2>Test Your Knowledge</h2>
+        <div class="quiz-container">
+            <div class="quiz-question">
+                <p>What is Cabanatuan known for?</p>
+                <div class="quiz-options">
+                    <button class="quiz-btn" onclick="checkAnswer(this, false)">Agricultural Trade</button>
+                    <button class="quiz-btn" onclick="checkAnswer(this, true)">Historical Heritage & Monuments</button>
+                    <button class="quiz-btn" onclick="checkAnswer(this, false)">Mining Operations</button>
+                </div>
+            </div>
+            <div class="quiz-result" id="quizResult"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Cabanatuan History - Lost Monuments and Vanishing Cultures</p>
+            <p>Authors: Nieves C. Villamin, Joel P. Mallari, Cesar G. Legaspi, Elmer S. Catahon</p>
+            <p>Preserving the Cultural Heritage of Cabanatuan City</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
